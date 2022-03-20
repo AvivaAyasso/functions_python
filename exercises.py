@@ -6,12 +6,16 @@ def pretty_print(num):
     print(num)
     print('****************************')
 
+# def sum_number(a, b):
+#     print(a+b)
+
+
 def sum_number(a, b):
     pretty_print(a+b)
 
 #call function
 sum_number(5, 1)
-
+#
 #2
 def sum_number(a, b):
     if a * b > 10:
@@ -95,3 +99,43 @@ if num == "4":
     a = int(input("enter first number"))
     b = int(input("enter secand number"))
     mul_number(a, b)
+
+#1 even & uneven num
+def even_uneven (a):
+    if a % 2 == 0:
+        print(0)
+    else:
+        print(1)
+
+
+num = int(input("enter a number"))
+even_uneven(num)
+
+
+1
+def hello():
+    num = input("enter a name")
+    print("hello", num)
+
+hello()
+
+2
+def mul_nymber(a, b):
+    c = a* b
+    print(c)
+
+mul_nymber(2, 3)
+
+def mul_nymber(a, b):
+    c = a* b
+    return c
+
+h= mul_nymber(2, 3)
+#to print i will add "print(h)
+
+#3
+def looplist(x):
+    for i in range(x):
+        yield i
+
+print(list(looplist(10)))
