@@ -6,16 +6,15 @@ def pretty_print(num):
     print(num)
     print('****************************')
 
-# def sum_number(a, b):
-#     print(a+b)
+def sum_number(a, b):
+    print(a+b)
 
 
 def sum_number(a, b):
     pretty_print(a+b)
 
 #call function
-sum_number(5, 1)
-#
+
 #2
 def sum_number(a, b):
     if a * b > 10:
@@ -100,26 +99,99 @@ if num == "4":
     b = int(input("enter secand number"))
     mul_number(a, b)
 
-#1 even & uneven num
-def even_uneven (a):
-    if a % 2 == 0:
-        print(0)
+#cllas_exercises
+#1
+def evenorodd(x=int(input("enter number"))):
+    if x%2==0:
+        return 0
     else:
-        print(1)
+        return 1
+#2
+
+def nfun(n):
+    total=0
+    count=0
+    for i in range(n):
+        n=int(input("enter number"))
+        total =total+n
+        count=count+1
+    return (total/count)
+
+print(nfun(3))
+
+#3
+def leng(x):
+    while x!=-999:
+        b=str(x)
+        return len(b)
+
+print(leng(9087))
+
+#4
+def change(c):
+    x=c//20
+    coins= c-(x*20)
+    y=coins//10
+    coinsof5=c-(x*20+y*10)
+    b=(coinsof5//5)
+    coinsof1= c-(x*20+y*10+b*5)
+    n=coinsof1//1
+    return ("notes of 20=",x,"coins of 10=",y,"coins of 5=",b,"coins of 1=", n)
+
+print(change(76))
+
+#5
+def power(x,y):
+    return (x**y)
+
+print(power(4,2))
+
+#6
+def dis10(x,y):
+    afterdis=x-(x*y)/100
+    return afterdis
+
+def price(x):
+    if x>1000:
+        y=int(input("enter dis"))
+        return dis10(x, y)
+    else:
+        return x - (x*10)/100
+
+print(price(1300))
 
 
-num = int(input("enter a number"))
-even_uneven(num)
+
+#9
+def menu(c,d):
+    x=input("a-	the biggest devider\nb-	the smallest divider"
+            "\nc-	the result of pow(a,b)\nd-	the result of sqrt(a)-sqrt(b)]\ne-	exit\nchoose one:")
 
 
-1
+print(menu(10,13))
+
+
+#11
+def pri(id):
+    print("give customer", id, "special treat")
+
+
+def books(id,value,bills,years):
+    if value>8000 and bills==1 or years>5:
+        return pri(id)
+    if bills==1 or bills==1 and years>5:
+        return pri(id)
+    else:
+        print("sorry no dis")
+
+#12
 def hello():
-    num = input("enter a name")
-    print("hello", num)
+    name = input("enter a name")
+    print("hello", name)
 
 hello()
 
-2
+#13
 def mul_nymber(a, b):
     c = a* b
     print(c)
@@ -133,7 +205,7 @@ def mul_nymber(a, b):
 h= mul_nymber(2, 3)
 #to print i will add "print(h)
 
-#3
+#14
 def looplist(x):
     for i in range(x):
         yield i
