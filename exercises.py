@@ -1,11 +1,3 @@
-#How to work with functions
-#1
-def pretty_print(num):
-    print('****************************')
-    print('the number is')
-    print(num)
-    print('****************************')
-
 def sum_number(a, b):
     print(a+b)
 
@@ -72,9 +64,11 @@ def mul_number(a,b):
     c = a * b
     return c
 
-#call function
-s = sum_number(5, 1)
-print(s)
+# #call function
+# s = sum_number(5, 1)
+# print(s)
+
+
 
 
 num = input("What calculation operation would you like to perform:\nto join press 1\nto subtraction Press 2\nto division press 3\nto double tap 4\n")
@@ -162,6 +156,7 @@ print(price(1300))
 
 
 
+
 #9
 def menu(c,d):
     x=input("a-	the biggest devider\nb-	the smallest divider"
@@ -211,3 +206,71 @@ def looplist(x):
         yield i
 
 print(list(looplist(10)))
+
+cllas_exercises
+
+1
+def avg():
+    sum = 0
+    count = 0
+    num = input("enter anumber")
+    while num != "q":
+        count =+ 1
+        sum = int(num)
+        num = input("enter anumber")
+    print(sum/count)
+
+avg()
+
+#2
+def palindrom(st):
+    start = 0
+    end = len(st) - 1
+    for i in range(len(st)//2):
+        if st[start] != st[end]:
+            print("not palindrom")
+            return
+        else:
+            start += 1
+            end -= 1
+    print("palindrom")
+#
+palindrom("aviva")
+
+3
+def holenumber():
+
+
+
+#6
+def count_number(ls):
+    newls=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    for i in ls:
+        newls[i] +=1
+    return newls
+
+my = [1, 1, 3, 3, 3, 4, 9, 8, 9]
+print(count_number(my))
+
+#quiz
+#1
+num = int(input("enter a number"))
+count = 1
+a = 1
+while a <= num:
+    count *= a
+    print(a, count)
+    a += 1
+
+#2
+num = input("enter 6 numbers:")
+even = 0
+odd = 0
+for i in (num):
+    a = int(i)
+    if a % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+print(even, "even numbers")
+print(odd, "odd numbers")
